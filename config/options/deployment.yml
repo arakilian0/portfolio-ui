@@ -1,0 +1,2 @@
+bucket: # aws bucketname
+distribution: # aws distribution id
