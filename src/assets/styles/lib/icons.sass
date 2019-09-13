@@ -1,0 +1,42 @@
+@font-face
+    font-family: "icon"
+    src: url('../fonts/iconfonts/icon.eot')
+    src: url('../fonts/iconfonts/icon.eot?#iefix') format('eot'), url('../fonts/iconfonts/icon.woff') format('woff'), url('../fonts/iconfonts/icon.ttf') format('truetype'), url('../fonts/iconfonts/icon.svg#icon') format('svg')
+
+@mixin icon-styles
+    font-family: "icon"
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-style: normal
+    font-variant: normal
+    font-weight: normal
+    text-decoration: none
+    text-transform: none
+
+%icon
+    +icon-styles
+
+@function icon-char($filename)
+    $char: ""
+
+    @if $filename == stack-exchange
+        $char: "\E001"
+    
+    @if $filename == stack-overflow
+        $char: "\E002"
+    
+    @return $char
+
+@mixin icon($filename, $insert: before, $extend: true)
+    &:#{$insert}
+        @if $extend
+            @extend %icon
+        @else
+            +icon-styles
+
+        content: icon-char($filename)
+
+.icon-stack-exchange
+    +icon(stack-exchange)
+.icon-stack-overflow
+    +icon(stack-overflow)
