@@ -13,22 +13,30 @@
     <link rel="icon" type="image/png" sizes="32x32" href="path/to/favicon/32">
     <link rel="icon" type="image/png" sizes="16x16" href="path/to/favicon/16">
     <link rel="manifest" href="path/to/favicon/manifest">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/all.css">
     <script defer src="assets/scripts/all.js"></script>
+    <script src="https://kit.fontawesome.com/3281ab3c06.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container flex-between">
-            <nav><a href="/">home</a><a href="/info">info</a><a href="/tools">tools</a><a href="/projects">projects</a><a href="/contact">contact</a></nav><button class="button-resume">resume</button>
+            <nav><a href="/">HOME</a><a href="/info">INFO</a><a href="/tools">TOOLS</a><a href="/projects">PROJECTS</a><a href="/contact">CONTACT</a></nav>
+            <div><i class="fa fa-sun mr-md" id="light-toggler"></i><button class="button-resume">resume<i class="fas fa-arrow-right"></i></button></div>
         </div>
     </header>
     <main>
-        <h1>Gulpify</h1>
+        <div class="main-container">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="hero-title"><span>Welcome to my serverless portfolio<i class="em em-zap ml-10"></i></span><br>
+                <div class="flex-center mt-14"><button>ABOUT ME</button><button>MY PROJECTS</button></div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>footer content goes here</p>
-    </footer>
+    <footer class="flex-around"><i class="fab fa-steam-symbol"></i><i class="fab fa-discord"></i><i class="fab fa-spotify"></i><i class="fab fa-npm"></i><i class="fab fa-github"></i><i class="fab fa-linkedin"></i><i class="fab fa-stack-overflow"></i><i class="fab fa-reddit-alien"></i><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></footer>
 </body>
 
 </html>

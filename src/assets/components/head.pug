@@ -11,9 +11,12 @@ link(rel="apple-touch-icon" sizes="180x180" href=assets.favicon.appletouch)
 link(rel="icon" type="image/png" sizes="32x32" href=assets.favicon.f32)
 link(rel="icon" type="image/png" sizes="16x16" href=assets.favicon.f16)
 link(rel="manifest" href=assets.favicon.manifest)
+link(href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet")
 
 each stylesheet in assets.stylesheets
 	link(rel="stylesheet" href=stylesheet)
 
 each script in assets.scripts
 	script(defer src=script)
+
+script(src="https://kit.fontawesome.com/3281ab3c06.js")
