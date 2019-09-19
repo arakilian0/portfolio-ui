@@ -89,6 +89,7 @@ footer i
 #light-toggler
 	color: #b19dd8
 	padding: 10px
+	margin-right: 4px
 	&:hover
 		color: white
 
@@ -116,9 +117,7 @@ footer i
 		// text-align: center
 
 
-// stars
-// @import compass
-
+// STARS code
 
 // n is number of stars required
 @function multiple-box-shadow ($n)
@@ -211,3 +210,19 @@ html
     transform: translateY(0px)
   to
     transform: translateY(-2000px)
+// end STARS code
+
+.nav-bars
+	display: none
+	// margin-left: 18px
+	&:hover
+		color: white
+	i
+		font-size: 22px
+		// padding: 17px 18px
+
+@media only screen and (max-width: 650px)
+	header div nav
+		display: none
+	.nav-bars
+		display: block
