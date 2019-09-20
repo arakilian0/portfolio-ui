@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let navBars = document.querySelector(\".nav-bars\");\nlet mobileHeader = document.querySelector(\".mobile-header\");\nlet navCloser = document.querySelector(\".nav-closer\");\nlet htmlTag = document.querySelector('html');\n\nnavBars.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"block\";\n\t// htmlTag.style.overflow = \"hidden\";\n});\n\nnavCloser.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"none\";\n\t// htmlTag.style.overflow = \"auto\";\n});\n\n\n//# sourceURL=webpack:///./src/assets/scripts/views/index.js?");
+eval("let navBars = document.querySelector(\".nav-bars\");\nlet mobileHeader = document.querySelector(\".mobile-header\");\nlet navCloser = document.querySelector(\".nav-closer\");\n\nnavBars.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"block\";\n});\n\nnavCloser.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"none\";\n});\n\n\n//# sourceURL=webpack:///./src/assets/scripts/views/index.js?");
 
 /***/ }),
 
