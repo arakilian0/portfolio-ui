@@ -3,6 +3,9 @@ body
 	letter-spacing: 2px
 	background: #19171c
 
+.overflow-hidden
+	overflow: hidden
+
 .container
 	padding: 14px 0px
 	font-size: 16px
@@ -50,24 +53,27 @@ header, footer
 header div nav a
 	color: #b19dd8
 	padding: 17px 18px
+	text-transform: uppercase
 	// letter-spacing: 0.8px
 	&:hover
 		color: white
 		border-bottom: 2px solid white
 		// background: #252728
 
-footer i
-	text-align: center
-	width: 25%
-	padding: 16px 0px
-	color: #b19dd8
-	font-size: 22px
-	cursor: pointer
-	border-bottom: 2px solid transparent
-	&:hover
-		color: white
-		border-bottom: 2px solid white
-		// background: #252728
+footer
+	z-index: 1002
+	a
+		text-align: center
+		width: 25%
+		padding: 16px 0px
+		color: #b19dd8
+		font-size: 22px
+		cursor: pointer
+		border-bottom: 2px solid transparent
+		&:hover
+			color: white
+			border-bottom: 2px solid white
+			// background: #252728
 
 .button-resume
 	margin-right: 18px
@@ -101,6 +107,8 @@ footer i
 	margin-top: 14px
 .txt-center
 	text-align: center
+.txt-uppercase
+	text-transform: uppercase
 
 .main-container
 	height: 84.5vh
@@ -131,17 +139,12 @@ $shadows-small:  multiple-box-shadow(700)
 $shadows-medium: multiple-box-shadow(200)
 $shadows-big:    multiple-box-shadow(100)
 
-html
-  // height: 100%
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
-  overflow: hidden
-
 #stars
   width: 1px
   height: 1px
   background: transparent
   box-shadow: $shadows-small
-  animation			: animStar 50s linear infinite
+  animation: animStar 30s linear infinite
 
   &:after
     content: " "
@@ -157,7 +160,7 @@ html
   height: 2px
   background: transparent
   box-shadow: $shadows-medium
-  animation: animStar 100s linear infinite
+  animation: animStar 20s linear infinite
 
   &:after
     content: " "
@@ -173,7 +176,7 @@ html
   height: 2.5px
   background: transparent
   box-shadow: $shadows-big
-  animation			: animStar 150s linear infinite
+  animation: animStar 15s linear infinite
 
   &:after
     content: " "
@@ -221,8 +224,59 @@ html
 		font-size: 22px
 		// padding: 17px 18px
 
+.mobile-header
+	display: none
+	width: 100vw
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 1001
+	background: #4b367c
+	animation: animMobileHeader 0.6s
+
+	.mobile-header-container
+		width: 100%
+		height: 100%
+		// display: flex
+		// flex-direction: column
+	.mobile-header-head
+		text-align: right
+		// margin-bottom: 18px
+		// outline: 2px solid lime
+		i
+			padding: 18px
+			border-bottom: 2px solid transparent
+			font-size: 24px
+			&:hover
+				color: white
+				border-bottom: 2px solid white
+	.mobile-header-body
+		// outline: 2px solid lime
+		margin-top: 16vh
+		display: flex
+		flex-direction: column
+		align-items: center
+		a
+			color: #b19dd8
+			padding: 16px
+			text-transform: uppercase
+			border-bottom: 2px solid transparent
+			&:hover
+				color: white
+				border-bottom: 2px solid white
+
+@keyframes animMobileHeader
+	from
+		height: 0vh
+	to
+		height: 100vh
+
 @media only screen and (max-width: 650px)
 	header div nav
 		display: none
 	.nav-bars
 		display: block
+	#hero-title
+		font-size: 26px
+		padding: 20px

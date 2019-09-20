@@ -1,17 +1,98 @@
 meta:
   lang: en
   charset: UTF-8
-  title: Page Title
+  title: "Michael Arakilian: Web Developer/Software Developer"
   description: Page Description
   keywords: Page, Keywords
   author: Michael Arakilian
 assets:
   favicon:
-    f16: path/to/favicon/16
-    f32: path/to/favicon/32
-    appletouch: path/to/favicon/appletouch
-    manifest: path/to/favicon/manifest
+    f16: assets/favicon/favicon-16x16.png
+    f32: assets/favicon/favicon-32x32.png
+    appletouch: assets/favicon//apple-touch-icon.png
+    manifest: assets/favicon/site.webmanifest
   stylesheets:
+  - https://fonts.googleapis.com/css?family=Oswald&display=swap
   - assets/styles/all.css
   scripts:
-  - assets/scripts/all.js
+    preload:
+    - https://kit.fontawesome.com/3281ab3c06.js
+    postload:
+    - assets/scripts/all.js
+tag:
+  html:
+    classList: "overflow-hidden"
+nav:
+  pages:
+  - 0:
+      title: Home
+      link: /
+  - 1:
+      title: Info
+      link: /info.html
+  - 2:
+      title: Tools
+      link: /tools.html
+  - 3:
+      title: Projects
+      link: /projects.html
+  - 4:
+      title: Contact
+      link: /contact.html
+footer:
+  links:
+  - 0:
+      title: Steam
+      icon: fab fa-steam-symbol
+      link: https://steamcommunity.com/id/arkamist
+      target: _blank
+  - 1:
+      title: Twitch
+      icon: fab fa-twitch
+      link: https://www.twitch.tv/arkamist
+      target: _blank
+  - 2:
+      title: Reddit
+      icon: fab fa-reddit-alien
+      link: https://www.reddit.com/user/arakilian0
+      target: _blank
+  - 3:
+      title: Discord
+      icon: fab fa-discord
+      link: /discord.html
+      target: _blank
+  - 4:
+      title: Spotify
+      icon: fab fa-spotify
+      link: https://open.spotify.com/playlist/1kNkNSsJIlA7ONCaI2mee9
+      target: _blank
+  - 5:
+      title: GitHub
+      icon: fab fa-github
+      link: https://github.com/arakilian0
+      target: _blank
+  - 6:
+      title: Stackoverflow
+      icon: fab fa-stack-overflow
+      link: https://stackoverflow.com/users/9933900/arakilian0?tab=profile
+      target: _blank
+  - 7:
+      title: NPM
+      icon: fab fa-npm
+      link: https://npmjs.com/~arakilian0
+      target: _blank
+  - 8:
+      title: Codepen
+      icon: fab fa-codepen
+      link: https://codepen.io/arakilian0
+      target: _blank
+  - 9:
+      title: LinkedIn
+      icon: fab fa-linkedin
+      link: https://www.linkedin.com/in/michael-arakilian
+      target: _blank
+  - 10:
+      title: Instagram
+      icon: fab fa-instagram
+      link: https://www.instagram.com/arakilian0
+      target: _blank

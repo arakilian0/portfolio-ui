@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/index */ \"./src/assets/scripts/views/index.js\");\n/* harmony import */ var _views_index__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_index__WEBPACK_IMPORTED_MODULE_0__);\n \n\n\n//# sourceURL=webpack:///./src/assets/scripts/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/index */ \"./src/assets/scripts/views/index.js\");\n/* harmony import */ var _views_index__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_index__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _views_info__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/info */ \"./src/assets/scripts/views/info.js\");\n/* harmony import */ var _views_info__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_views_info__WEBPACK_IMPORTED_MODULE_1__);\n\n \n\n\n//# sourceURL=webpack:///./src/assets/scripts/main.js?");
 
 /***/ }),
 
@@ -105,7 +105,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/assets/scripts/views/index.js?");
+eval("let navBars = document.querySelector(\".nav-bars\");\nlet mobileHeader = document.querySelector(\".mobile-header\");\nlet navCloser = document.querySelector(\".nav-closer\");\nlet htmlTag = document.querySelector('html');\n\nnavBars.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"block\";\n\t// htmlTag.style.overflow = \"hidden\";\n});\n\nnavCloser.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"none\";\n\t// htmlTag.style.overflow = \"auto\";\n});\n\n\n//# sourceURL=webpack:///./src/assets/scripts/views/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/scripts/views/info.js":
+/*!******************************************!*\
+  !*** ./src/assets/scripts/views/info.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/assets/scripts/views/info.js?");
 
 /***/ })
 
