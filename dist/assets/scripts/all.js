@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let navBars = document.querySelector(\".nav-bars\");\nlet mobileHeader = document.querySelector(\".mobile-header\");\nlet navCloser = document.querySelector(\".nav-closer\");\n\nnavBars.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"block\";\n});\n\nnavCloser.addEventListener(\"click\", function() {\n\tmobileHeader.style.display = \"none\";\n});\n\n\n//# sourceURL=webpack:///./src/assets/scripts/views/index.js?");
+eval("let navBars = document.querySelector(\".nav-bars\");\nlet mobileHeader = document.querySelector(\".mobile-header\");\nlet mobileHeaderBody = document.querySelector(\".mobile-header-body\");\nlet navCloser = document.querySelector(\".nav-closer\");\nlet heroTitle = document.querySelector(\"#hero-title\");\n\nnavBars.addEventListener(\"click\", function() {\n\tmobileHeader.classList.remove('mobile-header-close-animation');\n\tmobileHeader.style.display = \"block\";\n\theroTitle.style.display = \"none\";\n\tnavCloser.style.display = \"inline-block\";\n\tmobileHeaderBody.style.display = \"flex\";\n});\n\nnavCloser.addEventListener(\"click\", function() {\n\tsetTimeout(() => {\n\t\tmobileHeader.style.display = \"none\";\n\t},600);\n\tmobileHeader.classList.add('mobile-header-close-animation');\n\theroTitle.style.display = \"block\";\n\tnavCloser.style.display = \"none\";\n\tmobileHeaderBody.style.display = \"none\";\n});\n\n\n//# sourceURL=webpack:///./src/assets/scripts/views/index.js?");
 
 /***/ }),
 

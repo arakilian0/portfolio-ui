@@ -21,7 +21,7 @@ assets:
     - assets/scripts/all.js
 tag:
   html:
-    classList: "overflow-hidden"
+    classList: ""
 nav:
   pages:
   - 0:
