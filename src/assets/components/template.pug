@@ -3,7 +3,21 @@ html(lang=meta.lang class=tag.html.classList)
 	head
 		include head.pug
 	body
-		include header.pug
-		main
-			block body
-		include footer.pug
+		div(class="flip-box")
+			div(class="flip-box-container")
+				div(class="flip-box-front")
+					include header.pug
+					main
+						block body
+						div(class="flipped-footer")
+							div(class="flipped-footer-container")
+								div(class="flex-center w-100")
+									each linkObject in footer.links
+										each link in linkObject
+											a(href=link.link target=link.target)
+												i(class=link.icon)
+					include footer.pug
+				div(class="flip-box-back")
+					div(class="flip-box-back-content")
+						div(class="flip-box-back-content-container")
+							include resume.pug
