@@ -32,20 +32,23 @@ navCloser.addEventListener("click", function() {
 });
 
 resumeBtn.addEventListener("click", function() {
-	bodyTag.style.background = "#4b367c";
-	flipBoxFront.style.display = "none";
+	footerTag.style.opacity = "0";
 	flipBoxContainer.style.transform = "rotateY(-180deg)";
-	flipBoxContainer.style.transition = "transform 1.3s";
-	flipBoxBackContent.style.display = "block";
+	flipBoxContainer.style.transition = "transform 1.6s";
+	flippedFooter.style.display = "block";
+	setTimeout(function() {
+		flipBoxBackContent.style.display = "block";
+		flipBoxFront.style.display = "none";
+	}, 600);
 });
 
 resumeCloser.addEventListener("click", function() {
-	bodyTag.style.background = "#19171c";
 	flipBoxContainer.style.transform = "rotateY(0deg)";
-	flipBoxContainer.style.transition = "transform 1.3s";
+	flipBoxContainer.style.transition = "transform 1.6s";
 	// flipBoxBackContent.style.display = "none";
-	flippedFooter.style.display = "block";
-	setTimeout(flipBoxFront.style.display = "block",2000);
-	setTimeout(flipBoxBackContent.style.display = "none", 2000);
-	footerTag.style.display = "none";
+	// footerTag.style.display = "none";
+	setTimeout(function() {
+		flipBoxFront.style.display = "block";
+		flipBoxBackContent.style.display = "none";
+	}, 600);
 });
