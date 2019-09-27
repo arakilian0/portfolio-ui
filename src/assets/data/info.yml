@@ -1,7 +1,7 @@
 meta:
   lang: en
   charset: UTF-8
-  title: Page Title
+  title: "Michael Arakilian: Web Developer/Software Developer"
   description: Page Description
   keywords: Page, Keywords
   author: Michael Arakilian
@@ -96,3 +96,36 @@ footer:
       icon: fab fa-instagram
       link: https://www.instagram.com/arakilian0
       target: _blank
+resume:
+  sections:
+  - 0:
+    title: Work
+    description: My work experience
+    entries:
+    - 0:
+      company: "Lorem Company1"
+      date: "Ipsum date1"
+      location: "Los Ipsum1"
+      title: "Web Developer"
+      comments:
+      - "My Job Duty1"
+      - "My Job Duty2"
+      - "My Job Duty3"
+    - 1:
+      company: "Lorem Company2"
+      date: "Ipsum date2"
+      location: "Los Ipsum2"
+      title: "Assistant Manager"
+      comments:
+      - "My Job Duty4"
+      - "My Job Duty5"
+      - "My Job Duty6"
+  - 1:
+    title: Proficiencies
+    description: My software proficiencies
+  - 2:
+    title: Education
+    description: My certificates and education
+  - 3:
+    title: Volunteer
+    description: My volunteer experience

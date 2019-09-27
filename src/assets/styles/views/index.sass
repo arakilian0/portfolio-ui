@@ -10,6 +10,9 @@ body
 	padding: 14px 0px
 	font-size: 16px
 
+.ml-10
+	margin-left: 10px
+
 .w-100
 	width: 100vw
 
@@ -325,6 +328,23 @@ $shadows-big:    multiple-box-shadow(100)
 	to
 		height: 0vh
 
+@media only screen and (max-width: 801px)
+	#resume-body
+		// flex-wrap: nowrap !important
+		section
+			width: 80vw !important
+			margin-left: auto
+			margin-right: auto
+	.d-none-mobile-resume-btn
+		display: none !important
+	.resume-footer-container
+		button
+			width: 100% !important
+	.resume-section
+		text-align: center
+	.d-none-desktop-resume-zaps1
+		display: none !important
+
 @media only screen and (max-width: 650px)
 	header div nav
 		display: none
@@ -340,10 +360,23 @@ $shadows-big:    multiple-box-shadow(100)
 		button
 			font-size: 12px !important
 			// padding: 4px 8px !important
+	.flip-box-back-content-container
+		border-color: transparent !important
 
 @media only screen and (max-width: 650px) and (max-height: 490px)
 	.mobile-header-body
 		margin-top: 3vh !important
+
+@media only screen and (max-width: 1200px)
+	.resume-body
+		// flex-direction: column
+		justify-content: space-around !important
+		flex-wrap: wrap
+		section
+			width: 44vw !important
+			// display: none !important
+	// .resume-body-mobile
+	// 	display: flex !important
 
 .flip-box
 	background-color: transparent
@@ -361,6 +394,8 @@ $shadows-big:    multiple-box-shadow(100)
   		height: 100%
 			// z-index: 1003
   		backface-visibility: hidden
+		.flip-box-front
+			animation: animResumeBoxContent 0.6s
 		.flip-box-back
 			transform: rotateY(-180deg);
 			overflow: hidden !important
@@ -372,11 +407,14 @@ $shadows-big:    multiple-box-shadow(100)
 			height: 100vh
 			display: none
 			animation: animResumeBox 1.2s
+			overflow-x: hidden !important
+			overflow-y: scroll !important
 		.flip-box-back-content-container
 			height: 100vh !important
 			// padding: 10px
-			border: 6px solid #4b367c
-			animation: animResumeBoxContent 5s
+			// border: 6px solid #4b367c
+			// overflow: scroll !important
+			// animation: animResumeBoxContent 5s
 		@keyframes animResumeBoxContent
 			from
 				opacity: 0
@@ -400,6 +438,179 @@ $shadows-big:    multiple-box-shadow(100)
 		color: #b19dd8
 		font-size: 22px
 		padding: 18px
+		border-bottom: 2px solid transparent
 		&:hover
 			color: white
-			border-bottom: 2px solid white
+.resume-body
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	width: 100vw
+	// height: 80%
+	// outline: 2px solid red
+	// margin: 20px
+	color: black !important
+	overflow: scroll !important
+	margin-bottom: 46px
+	// background: #4b367c !important
+	animation: animFlipBackBoxContentOP 5s
+	section
+		width: 30%
+		height: 100%
+		margin: 0 0px 20px 0
+		padding: 20px
+		// outline: 2px solid lime
+		background: #b19dd8 !important
+		border-left: 4px solid #19171c
+		border-right: 4px solid #19171c
+		border-radius: 16px
+		// border-right: 2px solid #19171c
+.resume-footer
+	position: fixed
+	bottom: 0
+	width: 100vw
+	height: 46px
+	// margin-left: -6px
+	// button
+	// 	width: 50%
+	// 	height: 100%
+	// 	background: #19171c !important
+	// 	color: #b19dd8 !important
+	// 	font-size: 16px
+	// 	font-family: 'Oswald', sans-serif
+	// 	border: 2px solid #b19dd8
+	// 	&:hover
+	// 		border: 2px solid white
+	// 		color: white !important
+.resume-footer-container
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background: rgba(25,23,28,0.7)
+	width: 100%
+	height: 100%
+	button
+		width: 33%
+		height: 100%
+		background: #19171c !important
+		color: #b19dd8 !important
+		font-size: 16px
+		font-family: 'Oswald', sans-serif
+		border: 2px solid #b19dd8
+		&:hover
+			border: 2px solid white
+			color: white !important
+.resume-section
+	// height: 3000px !important
+	overflow: scroll !important
+
+.resume-section-title
+	font-weight: bold
+	font-size: 22px
+	text-align: center !important
+	color: #19171c
+	border-bottom: 4px solid #19171c
+	padding: 12px 0
+	text-transform: uppercase
+	// position: fixed
+.resume-section-description
+	text-transform: uppercase
+	font-size: 14px
+	margin-top: 40px
+	color: #19171c
+	margin-bottom: 16px
+	// color: #b19dd8
+.resume-section-section
+	margin-bottom: 20px
+	div
+		// padding: 16px 0
+
+.resume-body-mobile
+	display: none
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	background-color: #4b367c
+	padding-top: 0
+	.resume-body-mobile-section
+		padding: 28px 16px
+		width: 100%
+		// height: 200px
+		border-bottom: 10px solid #19171c
+
+.resume-body-mobile-title
+	color: #19171c
+	font-size: 22px
+	padding-bottom: 10px
+	border-bottom: 2px solid #19171c
+	text-transform: uppercase
+.resume-body-mobile-description
+	margin-top: 40px
+	margin-bottom: 16px
+.m-6
+	margin: 6px
+
+.resume-section-proficiency-title
+	// color: red !important
+	margin: 46px 15px 10px 15px
+	text-transform: uppercase
+	font-weight: 600
+	color: #19171c !important
+.resume-section-proficiency-topic
+	// color: blue !important
+	font-weight: normal !important
+	margin: 20px 10px 10px 10px
+	color: #19171c
+	text-transform: none
+	color: #19171c !important
+.resume-section-education-organization
+	margin: 46px 15px 10px 15px
+	font-weight: 600
+	color: #19171c !important
+	text-transform: uppercase
+.resume-section-education-location
+	font-weight: normal !important
+	color: #19171c
+	font-style: italic
+	font-size: 14px
+	margin: 6px 15px 8px 15px
+.resume-section-education-title
+	font-weight: normal !important
+	color: #19171c
+	// font-style: italic
+	// font-size: 13px
+	margin: 5px 15px 8px 15px
+.resume-section-education-year
+	font-weight: 500 !important
+	// color: #19171c
+	// font-style: italic
+	font-size: 15px
+	// margin: 5px 0 5px 20px
+	margin-top: 20px
+	color: #19171c !important
+	line-height: 24px
+	text-align: left
+	padding: 0px 40px
+	// text-transform: uppercase
+.resume-section-section-comment
+	margin: 20px 6px
+
+.d-none-desktop-resume-zaps
+	display: none
+	height: 9px
+	margin-left: 6px
+.d-none-desktop-resume-zaps1
+	height: 9px
+	margin-right: 6px
+
+@keyframes animFlipBackBoxContent
+	from
+		opacity: 1
+	to
+		opacity: 0
+
+@keyframes animFlipBackBoxContentOP
+	from
+		opacity: 0
+	to
+		opacity: 1

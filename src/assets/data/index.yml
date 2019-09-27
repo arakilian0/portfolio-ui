@@ -96,3 +96,113 @@ footer:
       icon: fab fa-instagram
       link: https://www.instagram.com/arakilian0
       target: _blank
+resume:
+  sections:
+  - 0:
+    work: true
+    title: Work
+    description: My work experience
+    entries:
+    - 0:
+      company: "Self Employed"
+      date: "Aug 2017 - Present"
+      location: "Los Angeles, CA"
+      title: "Web Developer"
+      comments:
+      - "Upgrade and maintain existing websites using front-end technologies such as HTML, CSS, JavaScript, and different CMS platforms"
+      - "Convert Photoshop and Illustrator files into functioning and responsive websites"
+      - "Develop stunning user experiences/interfaces by strategizing with designers and other developers"
+    - 1:
+      company: "Westport Properties, Inc."
+      date: "Feb 2019 - June 2019"
+      location: "La Crescenta, CA"
+      title: "Assistant Property Manager"
+      comments:
+      - "Develop stunning user experiences/interfaces by strategizing with designers and other developers"
+      - "Convert Photoshop and Illustrator files into functioning and responsive websites"
+      - "Develop stunning user experiences/interfaces by strategizing with designers and other developers"
+    - 2:
+      company: "Pyramid Special Jewelry, Inc."
+      date: "Jun 2011 - Dec 2017"
+      location: "Los Angeles, CA"
+      title: "Assistant Manager"
+      comments:
+      - "Worked with CEO to develop plans for upgrading current online shopping system"
+      - "Created new task management systems by integrating various software"
+      - "Managed social media outlets such as Instagram for company"
+  - 1:
+    proficiencies: true
+    title: Proficiencies
+    description: My software proficiencies
+    category:
+      frontEnd:
+      - "HTML5"
+      - "PugJS"
+      - "CSS3"
+      - "SASS"
+      - "JavaScript"
+      - "ES6"
+      - "Ajax"
+      plang:
+      - "Bash"
+      - "Node.js"
+      - "Python"
+      servers:
+      - "AWS Lambda"
+      - "AWS API-Gateway"
+      - "AWS Cloudfront"
+      - "AWS EC2"
+      databases:
+      - "AWS DynamoDB"
+      - "AWS S3"
+      - "Firebase"
+      - "PostgreSQL"
+      - "SQLite"
+      nlang:
+      - "English"
+      - "Armenian"
+      - "Spanish"
+      frameworks:
+      - "Django"
+      - "Flask"
+      - "Serverless (SLS)"
+      - "Twitter Bootstrap"
+      - "Gulp.js"
+      - "Babel"
+      - "Webpack"
+  - 2:
+    education: true
+    title: Education
+    description: My certificates and education
+    entries:
+    - 0:
+      organization: "Coding Dojo"
+      location: "Burbank, CA"
+      certificate:
+        title: "Certificate of Accomplishment"
+        link: "https://certificate.dojo.news/47b47a8f-a5f2-46f8-8a85-f8b13211b254"
+      year: "2018"
+      description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Sometimes on purpose (injected humour and the like)."
+    - 1:
+      organization: "John Marshall High School"
+      location: "Los Angeles, CA"
+      certificate:
+        title: "High School Diploma"
+        link: "n/a"
+      year: "2016"
+      description: "The readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+  - 3:
+    volunteer: true
+    title: Volunteer
+    description: My volunteer experience
+    entries:
+    - 0:
+      organization: "Homenetmen - Los Angeles"
+      date: "Jun 2014 - Aug 2017"
+      role: "Youth Counselor"
+      description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search."
+    - 1:
+      organization: "LA Central Animal Hospital"
+      date: "Jun 2011 - Aug 2011"
+      role: "Animal Care Associate"
+      description: "Normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy."

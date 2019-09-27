@@ -1,0 +1,71 @@
+div(class="m-6")
+	span(class="resume-section-title")=resumeSection.title
+div(class="resume-section-description")=resumeSection.description
+div(class="resume-section-section")
+	if resumeSection.work
+		each resumeSectionEntry in resumeSection.entries
+			div(class="resume-section-education-organization") #{resumeSectionEntry.company}
+			div(class="resume-section-education-title") #{resumeSectionEntry.title}
+			div(class="resume-section-education-title") #{resumeSectionEntry.location}
+			div(class="resume-section-education-location") #{resumeSectionEntry.date}
+			div
+				each resumeSectionEntryComment in resumeSectionEntry.comments
+					div(class="resume-section-education-year resume-section-section-comment") #{resumeSectionEntryComment}
+	if resumeSection.proficiencies
+		div
+			div(class="resume-section-proficiency-title") Front End Technology
+				each topic in resumeSection.category.frontEnd
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
+			div(class="resume-section-proficiency-title") Programming Languages
+				each topic in resumeSection.category.plang
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
+			div(class="resume-section-proficiency-title") Database Technology
+				each topic in resumeSection.category.databases
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
+			div(class="resume-section-proficiency-title") Frameworks
+				each topic in resumeSection.category.frameworks
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
+			div(class="resume-section-proficiency-title") Server Technology
+				each topic in resumeSection.category.servers
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
+			div(class="resume-section-proficiency-title") Spoken Languages
+				each topic in resumeSection.category.nlang
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+	if resumeSection.education
+		each entry in resumeSection.entries
+			div(class="resume-section-education-container")
+				div(class="resume-section-education-organization")=entry.organization
+				div(class="resume-section-education-title")=entry.certificate.title
+				div(class="resume-section-education-location") Class of #{entry.year}
+				//- div(class="resume-section-education-title") - #{entry.certificate.title}
+				p(class="resume-section-education-year")=entry.description
+	if resumeSection.volunteer
+		each entry in resumeSection.entries
+			div
+				div(class="resume-section-education-organization")=entry.organization
+				div(class="resume-section-education-title")=entry.role
+				div(class="resume-section-education-location")=entry.date
+				div(class="resume-section-education-year")=entry.description
