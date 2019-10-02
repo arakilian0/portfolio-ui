@@ -13,6 +13,13 @@ div(class="resume-section-section")
 					div(class="resume-section-education-year resume-section-section-comment") #{resumeSectionEntryComment}
 	if resumeSection.proficiencies
 		div
+			div(class="resume-section-proficiency-title") Version Control
+				each topic in resumeSection.category.vcs
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
 			div(class="resume-section-proficiency-title") Front End Technology
 				each topic in resumeSection.category.frontEnd
 					div(class="resume-section-proficiency-topic")
@@ -27,6 +34,20 @@ div(class="resume-section-section")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
+			div(class="resume-section-proficiency-title") Frameworks & Libs
+				each topic in resumeSection.category.frameworks
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
+			div(class="resume-section-proficiency-title") Web APIs
+				each topic in resumeSection.category.api
+					div(class="resume-section-proficiency-topic")
+						i(class="em em-zap d-none-desktop-resume-zaps1")
+						span #{topic}
+						i(class="em em-zap d-none-desktop-resume-zaps")
+		div
 			div(class="resume-section-proficiency-title") Database Technology
 				each topic in resumeSection.category.databases
 					div(class="resume-section-proficiency-topic")
@@ -34,8 +55,8 @@ div(class="resume-section-section")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Frameworks
-				each topic in resumeSection.category.frameworks
+			div(class="resume-section-proficiency-title") Data Formats
+				each topic in resumeSection.category.dlang
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
@@ -48,7 +69,7 @@ div(class="resume-section-section")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Spoken Languages
+			div(class="resume-section-proficiency-title") Natural Languages
 				each topic in resumeSection.category.nlang
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")

@@ -1,9 +1,10 @@
 div(class="resume-header")
 	i(class="fa fa-arrow-left resume-closer")
-div(class="resume-body" id="resume-body")
-	each resumeSection,index in resume.sections
-		section(class="resume-section")
-			include resume.sections.pug
+div(class="resume-body-container")
+	div(class="resume-body" id="resume-body")
+		each resumeSection,index in resume.sections
+			section(class="resume-section")
+				include resume.sections.pug
 div(class="resume-footer")
 	div(class="resume-footer-container")
 		button(class="d-none-mobile-resume-btn") Download .DOCX
