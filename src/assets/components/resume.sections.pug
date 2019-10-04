@@ -68,13 +68,6 @@ div(class="resume-section-section")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
-		div
-			div(class="resume-section-proficiency-title") Natural Languages
-				each topic in resumeSection.category.nlang
-					div(class="resume-section-proficiency-topic")
-						i(class="em em-zap d-none-desktop-resume-zaps1")
-						span #{topic}
-						i(class="em em-zap d-none-desktop-resume-zaps")
 	if resumeSection.education
 		each entry in resumeSection.entries
 			div(class="resume-section-education-container")

@@ -1,0 +1,27 @@
+.loader-container
+	width: 100vw
+	height: 100vh
+	background: #19171c
+	display: flex
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	.loader-icon
+		width: 52px
+		height: 52px
+		border-radius: 50%
+		border-color: #4b367c
+		border-width: 5px
+		background-color: transparent
+		animation: spin 2s infinite
+
+.loader-closer-animation
+	animation: loaderCloser 0.8s
+
+@keyframes loaderCloser
+	from
+		height: 100vh
+		opacity: 1
+	to
+		height: 0vh
+		opacity: 0

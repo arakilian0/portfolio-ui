@@ -19,9 +19,12 @@ assets:
     - "https://kit.fontawesome.com/3281ab3c06.js"
     postload:
     - "assets/scripts/all.js"
+page:
+  title: "Contact"
+  description: "Some description goes here, but it's blank for now."
 tag:
   html:
-    classList: "scroll-smooth"
+    classList: "scroll-smooth overflow-hidden overflow-x-hidden"
 nav:
   pages:
   - 0:

@@ -3,11 +3,13 @@ html(lang=meta.lang class=tag.html.classList)
 	head
 		include head.pug
 	body
+		div(class="loader-container")
+			button(class="loader-icon")
 		div(class="flip-box")
 			div(class="flip-box-container")
 				div(class="flip-box-front")
 					include header.pug
-					main
+					main(class="main-container-parent")
 						block body
 						div(class="flipped-footer")
 							div(class="flipped-footer-container")

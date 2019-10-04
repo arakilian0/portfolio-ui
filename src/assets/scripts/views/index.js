@@ -36,15 +36,16 @@ navCloser.addEventListener("click", function() {
 });
 
 resumeBtn.addEventListener("click", function() {
-	footerTag.style.opacity = "0";
+	// footerTag.style.opacity = "0";
 	flipBoxContainer.style.transform = "rotateY(-180deg)";
 	flipBoxContainer.style.transition = "transform 1.6s";
-	flippedFooter.style.display = "block";
+	// flippedFooter.style.display = "block";
 	flipBoxBackContent.style.animation = "animFlipBackBoxContentOP 0.8s";
 	flipBoxFront.style.animation = "animFlipBackBoxContent 0.8s";
 	setTimeout(function() {
+		// footerTag.style.display = "none";
 		flipBoxBackContent.style.display = "block";
-		flippedFooter.style.display = "none";
+		// flippedFooter.style.display = "none";
 		flipBoxFront.style.display = "none";
 		stars1.style.width = "0";stars1.style.height = "0";
 		stars2.style.width = "0";stars2.style.height = "0";
@@ -63,7 +64,7 @@ resumeCloser.addEventListener("click", function() {
 	setTimeout(function() {
 		flipBoxFront.style.display = "block";
 		flipBoxBackContent.style.display = "none";
-		flippedFooter.style.display = "block";
+		// flippedFooter.style.display = "block";
 		stars1.style.width = "1px";stars1.style.height = "1px";
 		stars2.style.width = "2px";stars2.style.height = "2px";
 		stars3.style.width = "2.5px";stars3.style.height = "2.5px";

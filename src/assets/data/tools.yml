@@ -19,9 +19,43 @@ assets:
     - "https://kit.fontawesome.com/3281ab3c06.js"
     postload:
     - "assets/scripts/all.js"
+page:
+  title: "Tools"
+  description: "Some description goes here, but it's blank for now."
+tools:
+- 0:
+  title: Recognition
+  shortDescription: "Some lorem ipsum goes here for now."
+  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
+  link: "/projects/gulpify.html"
+- 1:
+  title: Gamestats
+  shortDescription: "Some lorem ipsum goes here for now."
+  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
+  link: "/projects/gulpify-cli.html"
+- 2:
+  title: Music
+  shortDescription: "Some lorem ipsum goes here for now."
+  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
+  link: "/projects/zfood.html"
+- 3:
+  title: Dictionary
+  shortDescription: "Some lorem ipsum goes here for now."
+  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
+  link: "/projects/zfood.html"
+- 4:
+  title: Weather
+  shortDescription: "Some lorem ipsum goes here for now."
+  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
+  link: "/projects/zfood.html"
+- 5:
+  title: Cryptos
+  shortDescription: "Some lorem ipsum goes here for now."
+  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
+  link: "/projects/zfood.html"
 tag:
   html:
-    classList: "scroll-smooth"
+    classList: "scroll-smooth overflow-hidden overflow-x-hidden"
 nav:
   pages:
   - 0:

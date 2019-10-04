@@ -1,2 +1,7 @@
 extends assets/components/template.pug
 block body
+	section(class="page-section-container")
+		div(class="page-section-intro-section")
+			h1(class="text-uppercase")=page.title
+			div(class="page-section-text-divider")
+			p=page.description

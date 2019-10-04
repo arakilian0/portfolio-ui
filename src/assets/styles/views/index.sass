@@ -126,6 +126,7 @@ footer, .flipped-footer
 	text-transform: uppercase
 
 .main-container
+	margin-top: 0 !important
 	width: 100vw
 	height: 100vh
 	color: #b19dd8
@@ -514,7 +515,7 @@ $shadows-big:    multiple-box-shadow(100)
 			color: white !important
 .resume-section
 	// height: 3000px !important
-	overflow: scroll !important
+	// overflow: scroll !important
 
 .resume-section-title
 	font-weight: 800
@@ -634,3 +635,9 @@ $shadows-big:    multiple-box-shadow(100)
 
 .scroll-smooth
 	scroll-behavior: smooth !important
+
+@keyframes spin
+  from
+		transform: rotate(0deg)
+  to
+		transform: rotate(360deg)

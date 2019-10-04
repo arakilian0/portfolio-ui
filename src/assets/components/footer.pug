@@ -1,6 +1,14 @@
-footer(class="p-fixed-btm")
-	div(class="flex-center w-100")
-		each linkObject in footer.links
-			each link in linkObject
-				a(href=link.link target=link.target)
-					i(class=link.icon)
+if page.isIndex
+	footer(class="p-fixed-btm")
+		div(class="flex-center w-100")
+			each linkObject in footer.links
+				each link in linkObject
+					a(href=link.link target=link.target)
+						i(class=link.icon)
+else
+	footer(class="footer-non-index")
+		div(class="flex-center w-100")
+			each linkObject in footer.links
+				each link in linkObject
+					a(href=link.link target=link.target)
+						i(class=link.icon)
