@@ -1,0 +1,87 @@
+.contact-page-form
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	// outline: 2px solid red
+	margin-right: 40px
+	margin-top: 50px
+	input, textarea, select
+		margin: 8px
+		width: 357px
+		padding: 14px
+		font-size: 16px
+		border-radius: 4px
+		border: 1px solid #4b367c
+		background: #19171c
+		font-family: 'Oswald', sans-serif
+		letter-spacing: 1px
+		color: white
+	select
+		background: transparent
+		position: relative
+		width: 387px
+		appearance: none
+		-moz-appearance: none
+  	-webkit-appearance: none
+		cursor: pointer
+		option:not(:disabled)
+			color: #19171c !important
+		&:invalid
+			color: #b19dd8 !important
+	select::-ms-expand
+		display: none
+	input[type="submit"]
+		color: white
+		background: #4b367c
+		cursor: pointer
+		width: 387px
+		border: 2px solid transparent
+		margin-bottom: 70px
+		&:hover
+			background: rgba(75,54,124,0.8)
+	textarea
+		height: 120px
+		font-family: 'Oswald', sans-serif
+
+@media only screen and (max-width: 500px)
+	.contact-page-form
+		input, textarea
+			width: 250px
+		input[type="submit"], select
+			width: 280px
+	.contact-page-form-select-arrow
+		margin-left: 227px !important
+
+@media only screen and (max-width: 368px)
+	#contact-page-form
+		margin-left: -20px !important
+	.page-section-intro-section-links
+		margin-left: -68px !important
+
+.page-section-intro-section-links
+	text-align: center
+	display: flex
+	flex-direction: column
+	margin-left: -34px
+	padding-top: 20px
+	a
+		cursor: pointer
+		color: #b19dd8
+		margin: 6px
+		padding: 0
+		i
+			margin-right: 6px
+		span
+			font-family: "Oswald", sans-serif
+
+.contact-page-form-select-arrow
+	position: absolute
+	// outline: 2px solid red
+	margin-bottom: 160px
+	margin-left: 330px
+	font-size: 18px
+
+::placeholder
+	color: #b19dd8
+	opacity: 1

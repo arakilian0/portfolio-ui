@@ -9,6 +9,7 @@ let flipBoxFront = document.querySelector(".flip-box-front");
 let flipBoxContainer = document.querySelector(".flip-box-container");
 let flipBoxBackContent = document.querySelector(".flip-box-back-content");
 let bodyTag = document.querySelector('body');
+let htmlTag = document.querySelector('html');
 let resumeCloser = document.querySelector('.resume-closer');
 let flippedFooter = document.querySelector('.flipped-footer');
 let footerTag = document.querySelector('footer');

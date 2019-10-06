@@ -5,3 +5,18 @@ block body
 			h1(class="text-uppercase")=page.title
 			div(class="page-section-text-divider")
 			p=page.description
+		div(class="page-section-intro-section-links")
+			a(href="mailto:michael@arakilian0.com")
+				i(class="fas fa-envelope")
+				span michael@arakilian0.com
+			a(href="tel:123-441-0247")
+				i(class="fas fa-phone-alt")
+				span (213) 441 0247
+			a(href="https://www.google.com/maps/place/Los+Angeles,+CA/@37.9301533,-110.9098039,4z/data=!4m5!3m4!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!8m2!3d34.0522342!4d-118.2436849" target="_blank")
+				i(class="fas fa-map-marker-alt")
+				span Los Angeles, CA
+		form(class="contact-page-form" id="contact-page-form" action="#" method="POST")
+			input(type="text" placeholder="Full Name")
+			input(type="text" placeholder="Email or Phone #")
+			textarea(placeholder="Message")
+			input(type="submit" value="Submit")

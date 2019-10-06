@@ -24,6 +24,19 @@ page:
   title: "Home"
   description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text."
   imageUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets-dev/img/me-500x400.jpg"
+  specialScript:
+    if(document.readyState === 'ready' || document.readyState === 'complete') {
+      let doneLoading = false;
+    }
+    else {
+      document.onreadystatechange = function() {
+        let footerTag = document.querySelector('footer');
+        let flippedFooter = document.querySelector('.flipped-footer');
+
+        footerTag.style.display = 'none';
+        flippedFooter.style.display = 'block';
+      };
+    };
 tag:
   html:
     classList: "scroll-smooth overflow-hidden overflow-x-hidden"

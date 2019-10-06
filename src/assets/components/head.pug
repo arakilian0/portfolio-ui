@@ -20,3 +20,6 @@ each script in assets.scripts.preload
 
 each script in assets.scripts.postload
 	script(defer src=script)
+
+if page.isIndex
+	script=page.specialScript

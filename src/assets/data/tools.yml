@@ -27,32 +27,32 @@ tools:
   title: Recognition
   shortDescription: "Some lorem ipsum goes here for now."
   description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/gulpify.html"
+  link: "/tools/recognition.html"
 - 1:
   title: Gamestats
   shortDescription: "Some lorem ipsum goes here for now."
   description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/gulpify-cli.html"
+  link: "/tools/gamestats.html"
 - 2:
   title: Music
   shortDescription: "Some lorem ipsum goes here for now."
   description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/zfood.html"
+  link: "/tools/music.html"
 - 3:
   title: Dictionary
   shortDescription: "Some lorem ipsum goes here for now."
   description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/zfood.html"
+  link: "/tools/dictionary.html"
 - 4:
   title: Weather
   shortDescription: "Some lorem ipsum goes here for now."
   description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/zfood.html"
+  link: "/tools/weather.html"
 - 5:
   title: Cryptos
   shortDescription: "Some lorem ipsum goes here for now."
   description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/zfood.html"
+  link: "/tools/cryptos.html"
 tag:
   html:
     classList: "scroll-smooth overflow-hidden overflow-x-hidden"
