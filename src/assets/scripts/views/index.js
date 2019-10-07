@@ -17,7 +17,6 @@ let stars1 = document.querySelector('#stars');
 let stars2 = document.querySelector('#stars2');
 let stars3 = document.querySelector('#stars3');
 
-
 navBars.addEventListener("click", function() {
 	mobileHeader.classList.remove('mobile-header-close-animation');
 	mobileHeader.style.display = "block";
