@@ -1,7 +1,7 @@
 .page-section-tools-container
 	display: flex
 	flex-direction: column
-	form
+	#tool-form
 		display: flex
 		justify-content: center
 		margin-left: -40px
@@ -36,17 +36,23 @@
 
 @media only screen and (max-width: 650px)
 	.page-section-tools-container
-		form
+		#tool-form
 			input[type="text"]
 				width: 180px
 	.page-section-tools-result
 		width: 300px
+	.bread-container
+		display: none
+	.tool-input-placeholder
+		display: none !important
+	.tool-input-placeholder-mobile
+		display: block !important
 
 .tools-help-modal
 	position: absolute
 	bottom: 0
 	left: 0
-	background: rgba(75,54,124,0.99)
+	background: rgba(25,23,28,0.99)
 	width: 100%
 	height: 100%
 	display: none
@@ -79,3 +85,17 @@
 	to
 		height: 0%
 		opacity: 0
+
+.tool-input-placeholder-mobile
+	display: none
+
+.tools-help-modal
+	.tools-help-modal-body
+		outline: 2px solid red
+		margin-top: 10px
+
+.tools-help-modal-trigger
+	cursor: pointer
+
+.tool-result-text
+	color: #b19dd8
