@@ -16,13 +16,18 @@ block body
 			div(class="page-section-text-divider")
 			p(style="padding-bottom: 40px;")=page.description
 		div(class="page-section-tools-container")
-			form(action="/api/get/recognition/general/image-format")
-				input(type="text")
+			form()
+				input(type="text" placeholder="https://picsum.photos/id/235/200/200")
 				input(type="submit" value="SUBMIT")
 			div(style="text-align:center;margin-left: -40px;margin-top: 16px;")
 				a(href="#" class="tools-help-modal-trigger") Help?
 					div(class="tools-help-modal")
-						div Hello
+						div(class="tools-help-modal-header")
+							i(class="fa fa-times")
+						div(class="tools-help-modal-body")
+							div Hello
+						div(class="tools-help-modal-footer")
+							div Hello
 			div(style="margin-left: -40px;margin-top: 60px;")
 				div(class="page-section-tools-result")
 					div(style="margin-bottom: 16px;") Result:

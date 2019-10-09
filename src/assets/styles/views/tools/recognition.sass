@@ -44,9 +44,38 @@
 
 .tools-help-modal
 	position: absolute
-	top: 0
+	bottom: 0
 	left: 0
-	background: red
+	background: rgba(75,54,124,0.99)
 	width: 100%
 	height: 100%
 	display: none
+	animation: toolsHelpAnimation 0.8s
+.tools-help-modal-header
+	// outline: 2px solid red
+	text-align: right
+	font-size: 22px
+	// border-bottom: 2px solid transparent
+	color: #b19dd8
+	&:hover
+		// border-bottom: 2px solid white
+		color: white
+	i
+		padding: 16px
+		margin-right: 40px !important
+
+@keyframes toolsHelpAnimation
+	from
+		height: 0%
+		opacity: 0
+	to
+		height: 100%
+		opacity: 1
+
+@keyframes toolsHelpAnimationOP
+	from
+		height: 100%
+		opacity: 1
+	to
+		height: 0%
+		opacity: 0

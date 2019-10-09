@@ -23,7 +23,7 @@ page:
   isRecognition: true
   parentIsTools: true
   title: "Recognition"
-  description: "Some description goes here, but it's blank for now."
+  description: "General recognition using http image links."
   imageUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/me.jpg"
   specialScript:
     "if(document.readyState === 'ready' || document.readyState === 'complete') {
