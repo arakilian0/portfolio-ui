@@ -91,8 +91,19 @@
 
 .tools-help-modal
 	.tools-help-modal-body
-		outline: 2px solid red
+		// outline: 2px solid red
+		display: flex
+		flex-direction: column
 		margin-top: 10px
+		margin-left: -44px
+		.tools-help-modal-body-text
+			line-height: 24px
+			font-size: 18px
+			padding: 0 400px
+			margin: 20px 0
+
+.tools-help-modal-title
+	text-transform: uppercase
 
 .tools-help-modal-trigger
 	cursor: pointer
