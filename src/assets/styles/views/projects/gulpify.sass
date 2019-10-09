@@ -1,0 +1,83 @@
+.page-section-projects-container
+	margin-left: -19px
+	margin-right: 19px
+	margin-bottom: 40px
+	// outline: 2px solid red
+	display: flex
+	padding: 20px
+	.page-section-projects-box
+		// outline: 2px solid lime
+		width: 50%
+		display: flex
+		flex-direction: column
+	.page-section-projects-box-title
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		padding-bottom: 40px
+	.page-section-projects-box-text
+		line-height: 24px
+		padding: 0 60px
+		font-size: 18px
+
+.page-section-projects-contributers-box
+	display: flex
+	justify-content: center
+	// outline: 2px solid lime
+	img
+		// outline: 2px solid red
+		margin: 0px 20px
+		width: 50px
+		height: 50px
+		border-radius: 4px
+
+.page-section-projects-img-overlay
+	width: 50px
+	height: 50px
+	background: #19171c
+	position: absolute
+	margin-left: 20px
+	border-radius: 4px
+	opacity: 0.5
+	display: none
+
+.page-section-project-tools-used
+	display: flex
+	// outline: 2px solid red
+	margin-bottom: 40px
+	justify-content: center
+	div
+		margin: 0 10px 10px 10px
+		text-align: center
+		// outline: 2px solid red
+		// width: 100px
+		a
+			color: #b19dd8
+			font-size: 20px
+			&:hover
+				text-decoration: underline
+
+@media only screen and (max-width: 1000px)
+	.page-section-projects-container
+		flex-direction: column
+	.page-section-projects-box
+		width: 100% !important
+	.page-section-project-tools-used
+		div
+			margin: 0 6px 10px 6px
+	#pd-top-on-mobile
+		padding-top: 50px
+	.page-section-projects-box-text
+		padding: 0 100px !important
+	.page-section-projects-container
+		margin-left: -28px
+
+@media only screen and (max-width: 700px)
+	#page-section-projects-box-text
+		padding: 0 !important
+	.page-section-projects-container
+		margin-top: -20px !important
+
+@media only screen and (max-width: 339px)
+	.page-section-projects-container
+		margin-left: -28px !important

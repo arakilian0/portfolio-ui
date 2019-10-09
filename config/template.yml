@@ -4,3 +4,6 @@ views:
 - tools 
 - projects 
 - contact 
+- projects/gulpify
+- projects/gulpify-cli
+- tools/recognition

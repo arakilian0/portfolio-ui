@@ -20,8 +20,33 @@ assets:
     postload:
     - "assets/scripts/all.js"
 page:
+  isTools: true
   title: "Tools"
   description: "Some description goes here, but it's blank for now."
+  specialScript:
+    "if(document.readyState === 'ready' || document.readyState === 'complete') {
+      let doneLoading = false;
+    }
+    else {
+      document.onreadystatechange = function() {
+        let navBars = document.querySelector('.nav-bars');
+        let navCloser = document.querySelector('.nav-closer');
+        let htmlTag = document.querySelector('html');
+        let mobileHeaderContainer = document.querySelector('#mobileHeaderContainer');
+        navBars.addEventListener('click', function() {
+          htmlTag.style.overflow = 'hidden';
+          mobileHeaderContainer.style.display = 'block';
+          mobileHeaderContainer.style.animation = 'animFlipBackBoxContentOP 2s';
+        }, false);
+        navCloser.addEventListener('click', function() {
+          htmlTag.style.overflow = 'auto';
+          mobileHeaderContainer.style.animation = 'animFlipBackBoxContent 0.5s';
+          setTimeout(function() {
+            mobileHeaderContainer.style.display = 'none';
+          }, 500);
+        }, false);
+      };
+    };"
 tools:
 - 0:
   title: Recognition

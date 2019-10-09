@@ -1,5 +1,6 @@
 let navBars = document.querySelector(".nav-bars");
 let mobileHeader = document.querySelector(".mobile-header");
+let mobileHeaderContainer = document.querySelector(".mobile-header-container");
 let mobileHeaderBody = document.querySelector(".mobile-header-body");
 let navCloser = document.querySelector(".nav-closer");
 let heroTitle = document.querySelector(".hero-text-middle");

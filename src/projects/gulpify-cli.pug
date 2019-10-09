@@ -1,0 +1,77 @@
+extends ../assets/components/template.pug
+block body
+	div(class="bread-container")
+		div(class="bread-box")
+			div
+				a(href="/") Home
+			div /
+			div
+				a(href="/projects.html") Projects
+			div /
+			div
+				a(href="/projects/gulpify-cli.html") Gulpify-Cli
+	section(class="page-section-container")
+		div(class="page-section-intro-section" style="margin-bottom: 50px;")
+			h1(class="text-uppercase")=page.title
+			div(class="page-section-text-divider")
+			p(style="padding-bottom: 40px;")=page.description
+		div(class="page-section-projects-container")
+			div(class="page-section-projects-box")
+				div
+					div(class="page-section-projects-box-title") Story
+					p(class="page-section-projects-box-text" id="page-section-projects-box-text") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.
+				div
+					div(class="page-section-projects-box-title" style="padding-top: 50px;") Contributers
+					div(class="page-section-projects-contributers-box")
+						a(href="#" class="project-contributer-control")
+							div(class="page-section-projects-img-overlay")
+							img(src="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/github-pfp.jpg" alt="some picture")
+						a(href="#" class="project-contributer-control")
+							div(class="page-section-projects-img-overlay")
+							img(src="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/github-pfp.jpg" alt="some picture")
+						a(href="#" class="project-contributer-control")
+							div(class="page-section-projects-img-overlay")
+							img(src="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/github-pfp.jpg" alt="some picture")
+			div(class="page-section-projects-box")
+				div
+					div(class="page-section-projects-box-title" id="pd-top-on-mobile") Built With
+					div(class="page-section-project-tools-used")
+						div
+							div
+								a(href="#") PugJs
+							div
+								a(href="#") YAML
+							div
+								a(href="#") Sass
+							div
+								a(href="#") Babel
+							div
+								a(href="#") Webpack
+							div
+								a(href="#") Gulp
+							div
+								a(href="#") BrowserSync
+							div
+								a(href="#") Aws-Cli
+							div
+								a(href="#") Node.js
+							div
+								a(href="#") NPM
+				div
+					div(class="page-section-projects-box-title") Resources
+					div(class="page-section-project-tools-used")
+						div
+							div
+								a(href="#") Documentation
+							div
+								a(href="#") Download
+							div
+								a(href="#") Examples
+							div
+								a(href="#") Templates
+							div
+								a(href="#") Repository
+							div
+								a(href="#") License
+							div
+								a(href="#") Contribute

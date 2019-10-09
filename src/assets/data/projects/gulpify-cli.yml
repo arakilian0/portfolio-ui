@@ -13,16 +13,17 @@ assets:
     manifest: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/site.webmanifest"
   stylesheets:
   - "https://fonts.googleapis.com/css?family=Oswald&display=swap"
-  - "assets/styles/all.css"
+  - "../assets/styles/all.css"
   scripts:
     preload:
     - "https://kit.fontawesome.com/3281ab3c06.js"
     postload:
-    - "assets/scripts/all.js"
+    - "../assets/scripts/all.js"
 page:
-  isInfo: true
-  title: "Info"
-  description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text."
+  isGulpifyCli: true
+  parentIsProject: true
+  title: "Gulpify-Cli"
+  description: "Some description goes here, but it's blank for now."
   imageUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/me.jpg"
   specialScript:
     "if(document.readyState === 'ready' || document.readyState === 'complete') {

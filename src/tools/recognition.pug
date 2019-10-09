@@ -1,0 +1,27 @@
+extends ../assets/components/template.pug
+block body
+	div(class="bread-container")
+		div(class="bread-box")
+			div
+				a(href="/") Home
+			div /
+			div
+				a(href="/tools.html") Tools
+			div /
+			div
+				a(href="/tools/recognition.html") Recognition
+	section(class="page-section-container")
+		div(class="page-section-intro-section")
+			h1(class="text-uppercase")=page.title
+			div(class="page-section-text-divider")
+			p(style="padding-bottom: 40px;")=page.description
+		div(class="page-section-tools-container")
+			form(action="/api/get/recognition/general/image-format")
+				input(type="text")
+				input(type="submit" value="SUBMIT")
+			div(style="text-align:center;margin-left: -40px;margin-top: 16px;")
+				a(href="#") Help?
+			div(style="margin-left: -40px;margin-top: 60px;")
+				div(class="page-section-tools-result")
+					div(style="margin-bottom: 16px;") Result:
+					div It's quiet. To queit.

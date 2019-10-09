@@ -1,5 +1,12 @@
 extends assets/components/template.pug
 block body
+	div(class="bread-container")
+		div(class="bread-box")
+			div
+				a(href="/") Home
+			div /
+			div
+				a(href="/info.html") Info
 	section(class="page-section-container")
 		div(class="page-section-intro-section" style="margin-bottom: 50px;")
 			h1(class="text-uppercase")=page.title

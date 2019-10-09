@@ -4,3 +4,6 @@ import './views/info';
 import './views/tools';
 import './views/projects';
 import './views/contact';
+import './views/projects/gulpify'; 
+import './views/projects/gulpify-cli'; 
+import './views/tools/recognition'; 
