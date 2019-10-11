@@ -38,6 +38,15 @@ page:
         let navCloser = document.querySelector('.nav-closer');
         let htmlTag = document.querySelector('html');
         let mobileHeaderContainer = document.querySelector('#mobileHeaderContainer');
+        let toolsHelpModalTrigger = document.querySelector('#toolsHelpModalTrigger');
+        let toolsHelpModalCloser = document.querySelector('#toolsHelpModalHeader');
+        let toolsHelpModal = document.querySelector('.tools-help-modal');
+        toolsHelpModalTrigger.addEventListener('click', function(event) {
+          event.target.nextElementSibling.style.display = 'block';
+        });
+        toolsHelpModalCloser.addEventListener('click', function(event) {
+          toolsHelpModal.style.display = 'none';
+        });
         navBars.addEventListener('click', function() {
           htmlTag.style.overflow = 'hidden';
           mobileHeaderContainer.style.display = 'block';

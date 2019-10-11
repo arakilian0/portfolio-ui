@@ -21,9 +21,10 @@ block body
 				input(type="text" placeholder="https://picsum.photos/..." class="tool-input-placeholder-mobile")
 				input(type="submit" value="SUBMIT")
 			div(style="text-align:center;margin-left: -40px;margin-top: 16px;")
-				a(class="tools-help-modal-trigger") Help?
+				div(class="tools-help-modal-trigger")
+					a(href="#help" id="toolsHelpModalTrigger") Help?
 					div(class="tools-help-modal" style="cursor: default !important;")
-						div(class="tools-help-modal-header")
+						div(id="toolsHelpModalHeader" class="tools-help-modal-header" style="cursor: pointer !important;")
 							i(class="fa fa-times")
 						div(class="tools-help-modal-body")
 							div(class="tools-help-modal-title") Description:
