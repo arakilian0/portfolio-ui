@@ -13,10 +13,12 @@ assets:
     manifest: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/site.webmanifest"
   stylesheets:
   - "https://fonts.googleapis.com/css?family=Oswald&display=swap"
+  - "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-dark.min.css"
   - "../assets/styles/all.css"
   scripts:
     preload:
     - "https://kit.fontawesome.com/3281ab3c06.js"
+    - "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"
     postload:
     - "../assets/scripts/all.js"
 page:
@@ -26,7 +28,8 @@ page:
   description: "General recognition using http image links."
   imageUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/me.jpg"
   specialScript:
-    "if(document.readyState === 'ready' || document.readyState === 'complete') {
+    "hljs.initHighlightingOnLoad();
+    if(document.readyState === 'ready' || document.readyState === 'complete') {
       let doneLoading = false;
     }
     else {

@@ -1,5 +1,12 @@
 extends assets/components/template.pug
 block body
+	div(class="success-message-container")
+		div(class="success-message-box")
+			div(style="text-align: right;font-size: 20px;")
+				i(class="fa fa-times" id="successMsgCloser" style="padding: 16px;margin-top: -16px;margin-right: -12px;color: white;")
+			div(class="success-message")
+				div(style="text-align: center;text-transform: uppercase;font-weight: bold;padding-bottom: 20px;color: white;") Success
+				div(style="line-height: 24px;text-align: center;padding-bottom: 52px;color: white;") It is a long established fact that a reader will be distracted by the readable Distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
 	div(class="bread-container")
 		div(class="bread-box")
 			div
@@ -22,8 +29,11 @@ block body
 			a(href="https://www.google.com/maps/place/Los+Angeles,+CA/@37.9301533,-110.9098039,4z/data=!4m5!3m4!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!8m2!3d34.0522342!4d-118.2436849" target="_blank")
 				i(class="fas fa-map-marker-alt")
 				span Los Angeles, CA
-		form(class="contact-page-form" id="contact-page-form" action="#" method="POST")
-			input(type="text" placeholder="Full Name")
-			input(type="text" placeholder="Email or Phone #")
-			textarea(placeholder="Message")
-			input(type="submit" value="SUBMIT")
+		form(class="contact-page-form" id="contactPageForm" action="#validation")
+			input(type="text" placeholder="Full Name" id="contactPageFormName")
+			div(class="contact-form-val-msg") error
+			input(type="text" placeholder="Email or Phone #" id="contactPageFormContact")
+			div(class="contact-form-val-msg") error
+			textarea(placeholder="Message" id="contactPageFormMessage")
+			div(class="contact-form-val-msg") error
+			input(type="submit" value="SUBMIT" id="contactPageFormSubmitBtn")
