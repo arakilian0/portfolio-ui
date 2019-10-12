@@ -1,10 +1,10 @@
 div(class="m-6")
-	span(class="resume-section-title")=resumeSection.title
+	span(class="resume-section-title" style="color: #ff0033;")=resumeSection.title
 div(class="resume-section-description")=resumeSection.description
 div(class="resume-section-section")
 	if resumeSection.work
 		each resumeSectionEntry in resumeSection.entries
-			div(class="resume-section-education-organization") #{resumeSectionEntry.company}
+			div(class="resume-section-education-organization" style="color: #ff0033 !important;") #{resumeSectionEntry.company}
 			div(class="resume-section-education-title") #{resumeSectionEntry.title}
 			div(class="resume-section-education-title") #{resumeSectionEntry.location}
 			div(class="resume-section-education-location") #{resumeSectionEntry.date}
@@ -13,56 +13,56 @@ div(class="resume-section-section")
 					div(class="resume-section-education-year resume-section-section-comment") #{resumeSectionEntryComment}
 	if resumeSection.proficiencies
 		div
-			div(class="resume-section-proficiency-title") Version Control
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Version Control
 				each topic in resumeSection.category.vcs
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Front End Technology
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Front End Technology
 				each topic in resumeSection.category.frontEnd
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Programming Languages
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Programming Languages
 				each topic in resumeSection.category.plang
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Frameworks & Libs
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Frameworks & Libs
 				each topic in resumeSection.category.frameworks
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Web APIs
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Web APIs
 				each topic in resumeSection.category.api
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Database Technology
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Database Technology
 				each topic in resumeSection.category.databases
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Data Formats
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Data Formats
 				each topic in resumeSection.category.dlang
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
 						span #{topic}
 						i(class="em em-zap d-none-desktop-resume-zaps")
 		div
-			div(class="resume-section-proficiency-title") Server Technology
+			div(class="resume-section-proficiency-title" style="color: #ff0033 !important;") Server Technology
 				each topic in resumeSection.category.servers
 					div(class="resume-section-proficiency-topic")
 						i(class="em em-zap d-none-desktop-resume-zaps1")
@@ -71,7 +71,7 @@ div(class="resume-section-section")
 	if resumeSection.education
 		each entry in resumeSection.entries
 			div(class="resume-section-education-container")
-				div(class="resume-section-education-organization")=entry.organization
+				div(class="resume-section-education-organization" style="color: #ff0033 !important;")=entry.organization
 				div(class="resume-section-education-title")=entry.certificate.title
 				div(class="resume-section-education-location") Class of #{entry.year}
 				//- div(class="resume-section-education-title") - #{entry.certificate.title}
@@ -79,7 +79,7 @@ div(class="resume-section-section")
 	if resumeSection.volunteer
 		each entry in resumeSection.entries
 			div
-				div(class="resume-section-education-organization")=entry.organization
+				div(class="resume-section-education-organization" style="color: #ff0033 !important;")=entry.organization
 				div(class="resume-section-education-title")=entry.role
 				div(class="resume-section-education-location")=entry.date
 				div(class="resume-section-education-year")=entry.description

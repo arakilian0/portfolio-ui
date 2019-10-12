@@ -7,9 +7,7 @@ div(class="resume-body-container")
 				include resume.sections.pug
 div(class="resume-footer")
 	div(class="resume-footer-container")
-		button(class="d-none-mobile-resume-btn") Download DOCX
+		button(class="d-none-mobile-resume-btn" id="resumeDocxDownloader") Download DOCX
 			i(class="fas fa-download ml-10")
-		button Open PDF
+		button(id="resumePdfOpener") Download PDF
 			i(class="fas fa-external-link-square-alt ml-10")
-		button(class="d-none-mobile-resume-btn") Download PDF
-			i(class="fas fa-download ml-10")
