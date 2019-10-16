@@ -13,16 +13,59 @@ assets:
     manifest: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/site.webmanifest"
   stylesheets:
   - "https://fonts.googleapis.com/css?family=Oswald&display=swap"
-  - "assets/styles/all.css"
+  - "../assets/styles/all.css"
   scripts:
     preload:
     - "https://kit.fontawesome.com/3281ab3c06.js"
     postload:
-    - "assets/scripts/all.js"
+    - "../assets/scripts/all.js"
 page:
-  title: "Projects"
+  isColaCss: true
+  parentIsProject: true
+  title: "Cola-Css"
+  story: "Test is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like."
+  contributers:
+  - 0:
+    name: contributer name
+    imgUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/github-pfp.jpg"
+    link: link
+    altText: Error loading image.
+  - 0:
+    name: contributer name
+    imgUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/github-pfp.jpg"
+    link: link
+    altText: Error loading image.
+  resources:
+  - 0:
+    title: Documentation
+    link: link
+  - 1:
+    title: Download
+    link: link
+  - 2:
+    title: Repository
+    link: link
+  - 3:
+    title: License
+    link: link
+  - 4:
+    title: Contribute
+    link: link
+  builtWith:
+  - 0:
+    title: Gulp
+    link: link
+  - 0:
+    title: Gulp
+    link: link
+  - 0:
+    title: Gulp
+    link: link
+  - 0:
+    title: Gulp
+    link: link
   description: "Some description goes here, but it's blank for now."
-  isProjects: true
+  imageUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/me.jpg"
   specialScript:
     "if(document.readyState === 'ready' || document.readyState === 'complete') {
       let doneLoading = false;
@@ -47,27 +90,6 @@ page:
         }, false);
       };
     };"
-projects:
-- 0:
-  title: gulpify
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/gulpify.html"
-- 1:
-  title: gulpify-cli
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/gulpify-cli.html"
-- 2:
-  title: cola-css
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/cola-css.html"
-- 3:
-  title: cola-js
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/cola-js.html"
 tag:
   html:
     classList: "scroll-smooth overflow-hidden overflow-x-hidden"

@@ -7,3 +7,8 @@ views:
 - projects/gulpify
 - projects/gulpify-cli
 - tools/recognition
+- projects/cola-css
+- projects/cola-js
+- tools/gamestats
+- projects/gulpify/docs
+- projects/gulpify/download

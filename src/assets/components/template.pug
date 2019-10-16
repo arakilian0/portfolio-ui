@@ -3,6 +3,8 @@ html(lang=meta.lang class=tag.html.classList)
 	head
 		include head.pug
 	body
+		if docs
+			include docs/menu.pug
 		div(class="loader-container")
 			button(class="loader-icon")
 		div(class="flip-box")

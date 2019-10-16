@@ -13,18 +13,23 @@ assets:
     manifest: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/site.webmanifest"
   stylesheets:
   - "https://fonts.googleapis.com/css?family=Oswald&display=swap"
-  - "assets/styles/all.css"
+  - "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-dark.min.css"
+  - "../assets/styles/all.css"
   scripts:
     preload:
     - "https://kit.fontawesome.com/3281ab3c06.js"
+    - "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"
     postload:
-    - "assets/scripts/all.js"
+    - "../assets/scripts/all.js"
 page:
-  title: "Projects"
-  description: "Some description goes here, but it's blank for now."
-  isProjects: true
+  isGamestats: true
+  parentIsTools: true
+  title: "Gamestats"
+  description: "General recognition using http image links."
+  imageUrl: "https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/dev/img/me.jpg"
   specialScript:
-    "if(document.readyState === 'ready' || document.readyState === 'complete') {
+    "hljs.initHighlightingOnLoad();
+    if(document.readyState === 'ready' || document.readyState === 'complete') {
       let doneLoading = false;
     }
     else {
@@ -33,6 +38,15 @@ page:
         let navCloser = document.querySelector('.nav-closer');
         let htmlTag = document.querySelector('html');
         let mobileHeaderContainer = document.querySelector('#mobileHeaderContainer');
+        let toolsHelpModalTrigger = document.querySelector('#toolsHelpModalTrigger');
+        let toolsHelpModalCloser = document.querySelector('#toolsHelpModalHeader');
+        let toolsHelpModal = document.querySelector('.tools-help-modal');
+        toolsHelpModalTrigger.addEventListener('click', function(event) {
+          event.target.nextElementSibling.style.display = 'block';
+        });
+        toolsHelpModalCloser.addEventListener('click', function(event) {
+          toolsHelpModal.style.display = 'none';
+        });
         navBars.addEventListener('click', function() {
           htmlTag.style.overflow = 'hidden';
           mobileHeaderContainer.style.display = 'block';
@@ -47,27 +61,6 @@ page:
         }, false);
       };
     };"
-projects:
-- 0:
-  title: gulpify
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/gulpify.html"
-- 1:
-  title: gulpify-cli
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/gulpify-cli.html"
-- 2:
-  title: cola-css
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/cola-css.html"
-- 3:
-  title: cola-js
-  shortDescription: "Some lorem ipsum goes here for now."
-  description: "Some more lorem ipsum goes here for now, but we don't got that right now."
-  link: "/projects/cola-js.html"
 tag:
   html:
     classList: "scroll-smooth overflow-hidden overflow-x-hidden"

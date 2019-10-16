@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="scroll-smooth overflow-hidden overflow-x-hidden" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Michael Arakilian:</title>
+    <meta name="description" content="Page Description">
+    <meta name="keywords" content="Page, Keywords">
+    <meta name="author" content="Michael Arakilian">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.jsdelivr.net/gh/arakilian0/portfolio-ui-assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <script src="https://kit.fontawesome.com/3281ab3c06.js"></script>
+    <script defer src="assets/scripts/all.js"></script>
+    <script>
+        if (document.readyState === 'ready' || document.readyState === 'complete') {
+            let doneLoading = false;
+        } else {
+            document.onreadystatechange = function() {
+                let navBars = document.querySelector('.nav-bars');
+                let navCloser = document.querySelector('.nav-closer');
+                let htmlTag = document.querySelector('html');
+                let mobileHeaderContainer = document.querySelector('#mobileHeaderContainer');
+                navBars.addEventListener('click', function() {
+                    htmlTag.style.overflow = 'hidden';
+                    mobileHeaderContainer.style.display = 'block';
+                    mobileHeaderContainer.style.animation = 'animFlipBackBoxContentOP 2s';
+                }, false);
+                navCloser.addEventListener('click', function() {
+                    htmlTag.style.overflow = 'auto';
+                    mobileHeaderContainer.style.animation = 'animFlipBackBoxContent 0.5s';
+                    setTimeout(function() {
+                        mobileHeaderContainer.style.display = 'none';
+                    }, 500);
+                }, false);
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <div class="loader-container"><button class="loader-icon"></button></div>
+    <div class="flip-box">
+        <div class="flip-box-container">
+            <div class="flip-box-front">
+                <header>
+                    <div class="container flex-between">
+                        <div class="mobile-header">
+                            <div class="mobile-header-container" id="mobileHeaderContainer">
+                                <div class="mobile-header-head"><i class="fa fa-times nav-closer"></i></div>
+                                <div class="mobile-header-body"><a href="/">Home</a><a href="/info.html">Info</a><a href="/tools.html">Tools</a><a href="/projects.html">Projects</a><a href="/contact.html">Contact</a></div>
+                            </div>
+                        </div>
+                        <nav class="nav-bars"><a><i class="fa fa-bars"></i></a></nav>
+                        <nav><a href="/">Home</a><a href="/info.html">Info</a><a href="/tools.html">Tools</a><a href="/projects.html">Projects</a><a href="/contact.html">Contact</a></nav>
+                        <div><i class="fa fa-sun mr-md" id="light-toggler"></i><button class="button-resume">resume<i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </header>
+                <main class="main-container-parent">
+                    <div class="bread-container">
+                        <div class="bread-box">
+                            <div><a href="/">Home</a></div>
+                            <div>/</div>
+                            <div><a href="/projects.html">Projects</a></div>
+                        </div>
+                    </div>
+                    <section class="page-section-container">
+                        <div class="page-section-intro-section">
+                            <h1 class="text-uppercase">Projects</h1>
+                            <div class="page-section-text-divider"></div>
+                            <p>Some description goes here, but it's blank for now.</p>
+                        </div>
+                        <div class="card-section-container">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>gulpify</h1>
+                                    <h2>Some more lorem ipsum goes here for now, but we don't got that right now.</h2>
+                                </div>
+                                <div class="card-footer"><a href="/projects/gulpify.html">Learn more</a></div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>gulpify-cli</h1>
+                                    <h2>Some more lorem ipsum goes here for now, but we don't got that right now.</h2>
+                                </div>
+                                <div class="card-footer"><a href="/projects/gulpify-cli.html">Learn more</a></div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>cola-css</h1>
+                                    <h2>Some more lorem ipsum goes here for now, but we don't got that right now.</h2>
+                                </div>
+                                <div class="card-footer"><a href="/projects/cola-css.html">Learn more</a></div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>cola-js</h1>
+                                    <h2>Some more lorem ipsum goes here for now, but we don't got that right now.</h2>
+                                </div>
+                                <div class="card-footer"><a href="/projects/cola-js.html">Learn more</a></div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="flipped-footer">
+                        <div class="flipped-footer-container">
+                            <div class="flex-center w-100"><a href="https://steamcommunity.com/id/arkamist" target="_blank"><i class="fab fa-steam-symbol"></i></a><a href="https://www.twitch.tv/arkamist" target="_blank"><i class="fab fa-twitch"></i></a><a href="https://www.reddit.com/user/arakilian0" target="_blank"><i class="fab fa-reddit-alien"></i></a><a href="/discord.html" target="_blank"><i class="fab fa-discord"></i></a><a href="https://open.spotify.com/playlist/1kNkNSsJIlA7ONCaI2mee9" target="_blank"><i class="fab fa-spotify"></i></a><a href="https://github.com/arakilian0" target="_blank"><i class="fab fa-github"></i></a><a href="https://stackoverflow.com/users/9933900/arakilian0?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a><a href="https://npmjs.com/~arakilian0" target="_blank"><i class="fab fa-npm"></i></a><a href="https://codepen.io/arakilian0" target="_blank"><i class="fab fa-codepen"></i></a><a href="https://www.linkedin.com/in/michael-arakilian" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/arakilian0" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer-non-index">
+                    <div class="flex-center w-100"><a href="https://steamcommunity.com/id/arkamist" target="_blank"><i class="fab fa-steam-symbol"></i></a><a href="https://www.twitch.tv/arkamist" target="_blank"><i class="fab fa-twitch"></i></a><a href="https://www.reddit.com/user/arakilian0" target="_blank"><i class="fab fa-reddit-alien"></i></a><a href="/discord.html" target="_blank"><i class="fab fa-discord"></i></a><a href="https://open.spotify.com/playlist/1kNkNSsJIlA7ONCaI2mee9" target="_blank"><i class="fab fa-spotify"></i></a><a href="https://github.com/arakilian0" target="_blank"><i class="fab fa-github"></i></a><a href="https://stackoverflow.com/users/9933900/arakilian0?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a><a href="https://npmjs.com/~arakilian0" target="_blank"><i class="fab fa-npm"></i></a><a href="https://codepen.io/arakilian0" target="_blank"><i class="fab fa-codepen"></i></a><a href="https://www.linkedin.com/in/michael-arakilian" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/arakilian0" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                </footer>
+            </div>
+            <div class="flip-box-back">
+                <div class="flip-box-back-content">
+                    <div class="flip-box-back-content-container">
+                        <div class="resume-header"><i class="fa fa-arrow-left resume-closer"></i></div>
+                        <div class="resume-body-container">
+                            <div class="resume-body" id="resume-body">
+                                <section class="resume-section">
+                                    <div class="m-6"><span class="resume-section-title" style="color: #ff0033;">Work</span></div>
+                                    <div class="resume-section-description">My work experience</div>
+                                    <div class="resume-section-section">
+                                        <div class="resume-section-education-organization" style="color: #ff0033 !important;">Freelance / Self Employed</div>
+                                        <div class="resume-section-education-title">Web Developer</div>
+                                        <div class="resume-section-education-title">Los Angeles, CA</div>
+                                        <div class="resume-section-education-location">Aug 2017 - Present</div>
+                                        <div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Upgrade and maintain existing websites using front-end technologies such as HTML, CSS, JavaScript, and different CMS platforms</div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Convert Photoshop and Illustrator files into functioning and responsive websites</div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Develop stunning user experiences/interfaces by strategizing with designers and other developers</div>
+                                        </div>
+                                        <div class="resume-section-education-organization" style="color: #ff0033 !important;">Westport Properties, Inc.</div>
+                                        <div class="resume-section-education-title">Assistant Property Manager</div>
+                                        <div class="resume-section-education-title">La Crescenta, CA</div>
+                                        <div class="resume-section-education-location">Feb 2019 - June 2019</div>
+                                        <div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Develop stunning user experiences/interfaces by strategizing with designers and other developers</div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Convert Photoshop and Illustrator files into functioning and responsive websites</div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Develop stunning user experiences/interfaces by strategizing with designers and other developers</div>
+                                        </div>
+                                        <div class="resume-section-education-organization" style="color: #ff0033 !important;">Pyramid Special Jewelry, Inc.</div>
+                                        <div class="resume-section-education-title">Assistant Manager</div>
+                                        <div class="resume-section-education-title">Los Angeles, CA</div>
+                                        <div class="resume-section-education-location">Jun 2011 - Dec 2017</div>
+                                        <div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Worked with CEO to develop plans for upgrading current online shopping system</div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Created new task management systems by integrating various software</div>
+                                            <div class="resume-section-education-year resume-section-section-comment">Managed social media outlets such as Instagram for company</div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="resume-section">
+                                    <div class="m-6"><span class="resume-section-title" style="color: #ff0033;">Proficiencies</span></div>
+                                    <div class="resume-section-description">My software proficiencies</div>
+                                    <div class="resume-section-section">
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Version Control<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Git</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Front End Technology<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>HTML5</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>PugJS</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>CSS3</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Sass</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>JavaScript</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Bootstrap</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>jQuery</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Ajax</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>ES6</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Babel</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Webpack</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Angular</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>React</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Programming Languages<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Bash</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Node</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Python</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Frameworks & Libs<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Gulp</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Express</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Flask</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Django</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Serverless</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Web APIs<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Stripe API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>PayPal API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>IBM Watson - Visual...</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>OpenWeatherMap API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Wordnik API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Steam Web API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Google Maps API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Deezer API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Spotify API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>CryptoCompare API</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Database Technology<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>AWS DynamoDB</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>AWS S3</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Firebase</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>PostgreSQL</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>SQLite</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Data Formats<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>YAML</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>JSON</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>XML</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-proficiency-title" style="color: #ff0033 !important;">Server Technology<div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>AWS Lambda</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>AWS API-Gateway</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>AWS Cloudfront</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>AWS EC2</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Github + jsDelivr</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Cloudflare</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                                <div class="resume-section-proficiency-topic"><i class="em em-zap d-none-desktop-resume-zaps1"></i><span>Netlify</span><i class="em em-zap d-none-desktop-resume-zaps"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="resume-section">
+                                    <div class="m-6"><span class="resume-section-title" style="color: #ff0033;">Education</span></div>
+                                    <div class="resume-section-description">My certificates and education</div>
+                                    <div class="resume-section-section">
+                                        <div class="resume-section-education-container">
+                                            <div class="resume-section-education-organization" style="color: #ff0033 !important;">Coding Dojo</div>
+                                            <div class="resume-section-education-title">Certificate of Accomplishment</div>
+                                            <div class="resume-section-education-location">Class of 2018</div>
+                                            <p class="resume-section-education-year">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Sometimes on purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="resume-section-education-container">
+                                            <div class="resume-section-education-organization" style="color: #ff0033 !important;">John Marshall High School</div>
+                                            <div class="resume-section-education-title">High School Diploma</div>
+                                            <div class="resume-section-education-location">Class of 2016</div>
+                                            <p class="resume-section-education-year">The readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="resume-section">
+                                    <div class="m-6"><span class="resume-section-title" style="color: #ff0033;">Volunteer</span></div>
+                                    <div class="resume-section-description">My volunteer experience</div>
+                                    <div class="resume-section-section">
+                                        <div>
+                                            <div class="resume-section-education-organization" style="color: #ff0033 !important;">Homenetmen - Los Angeles</div>
+                                            <div class="resume-section-education-title">Youth Counselor</div>
+                                            <div class="resume-section-education-location">Jun 2014 - Aug 2017</div>
+                                            <div class="resume-section-education-year">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.</div>
+                                        </div>
+                                        <div>
+                                            <div class="resume-section-education-organization" style="color: #ff0033 !important;">LA Central Animal Hospital</div>
+                                            <div class="resume-section-education-title">Animal Care Associate</div>
+                                            <div class="resume-section-education-location">Jun 2011 - Aug 2011</div>
+                                            <div class="resume-section-education-year">Normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy.</div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="resume-footer">
+                            <div class="resume-footer-container"><button class="d-none-mobile-resume-btn" id="resumeDocxDownloader">Download DOCX<i class="fas fa-download ml-10"></i></button><button id="resumePdfOpener">Download PDF<i class="fas fa-external-link-square-alt ml-10"></i></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

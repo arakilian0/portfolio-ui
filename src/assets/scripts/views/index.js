@@ -17,6 +17,22 @@ let footerTag = document.querySelector('footer');
 let stars1 = document.querySelector('#stars');
 let stars2 = document.querySelector('#stars2');
 let stars3 = document.querySelector('#stars3');
+let docsMenuAnimation = document.querySelector('.docs-fixed-container');
+
+window.addEventListener('scroll', () => {
+	moveDocsMenuOnScroll(window.pageYOffset);
+});
+
+function moveDocsMenuOnScroll(offset) {
+	const target = 64;
+
+	if(offset >= target) {
+		docsMenuAnimation.style.top = "0";
+	}
+	else {
+		docsMenuAnimation.style.top = "108px";
+	}
+}
 
 navBars.addEventListener("click", function() {
 	mobileHeader.classList.remove('mobile-header-close-animation');
@@ -37,6 +53,9 @@ navCloser.addEventListener("click", function() {
 });
 
 resumeBtn.addEventListener("click", function() {
+	if(docsMenuAnimation) {
+		docsMenuAnimation.style.animation = 'docsMenuAnimationAlt 0.6s';
+	}
 	// footerTag.style.opacity = "0";
 	flipBoxContainer.style.transform = "rotateY(-180deg)";
 	flipBoxContainer.style.transition = "transform 1.6s";
@@ -47,10 +66,15 @@ resumeBtn.addEventListener("click", function() {
 		// footerTag.style.display = "none";
 		flipBoxBackContent.style.display = "block";
 		// flippedFooter.style.display = "none";
+		if(docsMenuAnimation) {
+			docsMenuAnimation.style.display = 'none';
+		}
 		flipBoxFront.style.display = "none";
-		stars1.style.width = "0";stars1.style.height = "0";
-		stars2.style.width = "0";stars2.style.height = "0";
-		stars3.style.width = "0";stars3.style.height = "0";
+		if(stars1 && stars2 && stars3) {
+			stars1.style.width = "0";stars1.style.height = "0";
+			stars2.style.width = "0";stars2.style.height = "0";
+			stars3.style.width = "0";stars3.style.height = "0";
+		}
 	}, 600);
 });
 
@@ -63,11 +87,17 @@ resumeCloser.addEventListener("click", function() {
 	flipBoxBackContent.style.animation = "animFlipBackBoxContent 0.6s";
 	flipBoxFront.style.animation = "animFlipBackBoxContentOP 0.6s";
 	setTimeout(function() {
+		if(docsMenuAnimation) {
+			docsMenuAnimation.style.animation = 'docsMenuAnimation 0.8s';
+			docsMenuAnimation.style.display = 'block';
+		}
 		flipBoxFront.style.display = "block";
 		flipBoxBackContent.style.display = "none";
 		// flippedFooter.style.display = "block";
-		stars1.style.width = "1px";stars1.style.height = "1px";
-		stars2.style.width = "2px";stars2.style.height = "2px";
-		stars3.style.width = "2.5px";stars3.style.height = "2.5px";
+		if(stars1 && stars2 && stars3) {
+			stars1.style.width = "1px";stars1.style.height = "1px";
+			stars2.style.width = "2px";stars2.style.height = "2px";
+			stars3.style.width = "2.5px";stars3.style.height = "2.5px";
+		}
 	}, 600);
 });

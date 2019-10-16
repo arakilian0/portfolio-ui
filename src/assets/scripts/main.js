@@ -7,3 +7,8 @@ import './views/contact';
 import './views/projects/gulpify';
 import './views/projects/gulpify-cli';
 import './views/tools/recognition';
+import './views/projects/cola-css';
+import './views/projects/cola-js';
+import './views/tools/gamestats';
+import './views/projects/gulpify/docs';
+import './views/projects/gulpify/download'; 

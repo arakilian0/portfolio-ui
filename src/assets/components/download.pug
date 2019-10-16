@@ -1,0 +1,9 @@
+div(class="download-container")
+	div(class="download-inner-container")
+		div(class="download-box")
+			div(class="download-box-header")
+				each platform in download.platforms
+					button(id=platform.id)=platform.title
+			div(class="download-box-content")
+				if page.isGulpifyDownload
+					include ../../assets/components/downloads/gulpify.pug

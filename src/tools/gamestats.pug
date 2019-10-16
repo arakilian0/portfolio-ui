@@ -1,0 +1,98 @@
+extends ../assets/components/template.pug
+block body
+	div(class="bread-container")
+		div(class="bread-box")
+			div
+				a(href="/") Home
+			div /
+			div
+				a(href="/tools.html") Tools
+			div /
+			div
+				a(href="/tools/gamestats.html") Gamestats
+	section(class="page-section-container")
+		div(class="page-section-intro-section")
+			h1(class="text-uppercase")=page.title
+			div(class="page-section-text-divider")
+			p(style="padding-bottom: 40px;")=page.description
+		div(class="page-section-tools-container")
+			div(id="tool-form")
+				input(type="text" placeholder="https://picsum.photos/id/235/200/200" class="tool-input-placeholder")
+				input(type="text" placeholder="https://picsum.photos/..." class="tool-input-placeholder-mobile")
+				input(type="submit" value="SUBMIT")
+			div(style="text-align:center;margin-left: -40px;margin-top: 16px;")
+				div(class="tools-help-modal-trigger")
+					a(href="#help" id="toolsHelpModalTrigger") Help?
+					div(class="tools-help-modal" style="cursor: default !important;")
+						div(id="toolsHelpModalHeader" class="tools-help-modal-header" style="cursor: pointer !important;")
+							i(class="fa fa-times")
+						div(class="tools-help-modal-body")
+							div(class="tools-help-modal-title") Description:
+							div(class="tools-help-modal-body-text") IBM Watson Visual Recognition understands an image’s content out-of-the-box. Their pre-trained models enable you to analyze images for objects, colors, food, explicit content and other subjects for insights into your visual content.
+							div(class="tools-help-modal-title") Example:
+							div(class="tools-help-modal-example-container")
+								div(class="tools-help-modal-example-box")
+									div(class="tools-help-modal-example-box-item-box")
+										img(src="https://picsum.photos/id/23/259/259" alt="Example Image" style="border-radius: 4px;")
+									div(class="mobile-tool-example-input-container")
+										input(type="text" value="https://picsum.photos/id/23/200/200" disabled)
+										button(disabled)
+											i(class="fa fa-search")
+								div(class="tools-help-modal-example-box" style="padding: 6px 10px;")
+									div(style="text-transform: uppercase;margin-bottom: 10px;" class="mg-top-on-mobile-tools-example-result") Result:
+									pre(style="width: 355px;font-family: monospace;letter-spacing: 0.7px;" id="code-box")
+										code(class="json" style="padding: 16px;border-radius: 4px;")
+											| "text": "data",
+											| "boolean": true,
+											| "object": {
+											|	"array1": [1,2,3,4],
+											|	"number1": 23
+											| },
+											| "boolean": true,
+											| "object": {
+											|	"array1": [1,2,3,4],
+											|	"number1": 23
+											| },
+											| "boolean": true,
+											| "object": {
+											|	"array1": [1,2,3,4],
+											|	"number1": 23
+											| },
+											| },
+											| "boolean": true
+							div(class="tools-help-modal-title" style="line-height: 38px;") Samples:
+								br
+								span(style="font-size: 18px;margin-top: 6px;color: white;text-transform: none;") Click the
+								i(class="far fa-clone" style="margin: 0 6px;font-size: 18px;color: white;")
+								span(style="font-size: 18px;color: white;text-transform: none;") icon to copy the
+								br
+								span(style="font-size: 18px;color: white;text-transform: none;display: block;margin-top: -10px;") image link for each image.
+								div(class="tools-help-modal-samples-container" style="margin-bottom: 40px;")
+									div(class="mobile-sample-images")
+										img(src="https://picsum.photos/id/23/259/259" alt="Some image")
+										div(class="sample-image-clipboard-container")
+											input(type="text" value="https://picsum.photos/id/23/259/200" disabled class="mg-left-on-mobile-input-tools-example")
+											button()
+												i(class="far fa-clone")
+									div(class="mobile-sample-images")
+										img(src="https://picsum.photos/id/23/259/259" alt="Some image")
+										div(class="sample-image-clipboard-container")
+											input(type="text" value="https://picsum.photos/id/23/259/200" disabled class="mg-left-on-mobile-input-tools-example")
+											button()
+												i(class="far fa-clone")
+									div(class="mobile-sample-images")
+										img(src="https://picsum.photos/id/23/259/259" alt="Some image")
+										div(class="sample-image-clipboard-container")
+											input(type="text" value="https://picsum.photos/id/23/259/200" disabled class="mg-left-on-mobile-input-tools-example")
+											button()
+												i(class="far fa-clone")
+									div(class="mobile-sample-images")
+										img(src="https://picsum.photos/id/23/259/259" alt="Some image")
+										div(class="sample-image-clipboard-container")
+											input(type="text" value="https://picsum.photos/id/23/259/200" disabled class="mg-left-on-mobile-input-tools-example")
+											button()
+												i(class="far fa-clone")
+			div(style="margin-left: -40px;margin-top: 60px;")
+				div(class="page-section-tools-result")
+					div(style="margin-bottom: 16px;" class="text-uppercase") Result:
+					div(class="tool-result-text") It's quiet....To queit
